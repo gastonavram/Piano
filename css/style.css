@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../notas-piano.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#piano {
+    max-width: 1200px;
+    width: 90%;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+
+.key {
+    width: 14.2857%;
+    height: 200px;
+    float: left;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: black;
+    color: white;
+}
+
+.pressed {
+    background-color: black;
+    color: white;
+}
